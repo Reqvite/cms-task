@@ -8,8 +8,8 @@ const Cms = ({ tabs }) => {
   };
   return (
     <section>
-      <h1>Primitive CMS</h1>
-      <ul>
+      <h1>CMS</h1>
+      <ul className="cmsTabs">
         {tabs.map((tab) => (
           <li key={tab.id}>
             <button onClick={() => handleTabChange(tab.id)}>{tab.title}</button>
