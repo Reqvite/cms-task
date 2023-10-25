@@ -9,7 +9,7 @@ const App = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    fetch("/tabs.json")
+    fetch("/cms-task/tabs.json")
       .then((response) => response.json())
       .then((data) => {
         data.sort((a, b) => a.order - b.order);
